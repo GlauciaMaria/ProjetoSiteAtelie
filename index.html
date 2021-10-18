@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8"/>
+    <title>ATELIÊ DA FRAN</title>
+    <meta name="author" content="Glaucia Borges" />
+    <meta name="keywords" content="costureira, ateliê da fran, conserto de roupas, costura em geral, ateliê, ateliê de costura, costura sob medida, reforma de roupas, ajustes de roupas, ajustes, conserto, consertos em geral" />
+    <meta name="description" content="Costura e consertos de roupas em geral" />
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+<body>
+    <nav>
+        <a class="a-menu" href="#">HOME</a>
+        <a class="a-menu" href="#pag-ateliedafran">SOBRE</a>
+        <a class="a-menu" href="#pag-servicos">SERVIÇOS</a>
+        <a class="a-menu" href="#pag-encomendas">ENCOMENDAS</a>
+    </nav>
+    <header>
+        <img src="image/banner.fran.png" alt="banner contendo a logo do ateliê da fran costura e consertos de roupas" />
+    </header>    
+    <article id="pag-ateliedafran">
+       <h1>Ateliê da Fran</h1>
+    
+        <p>Um espaço de criação onde se transforma sonho em realidade através da arte de costurar. Nele se pode experimentar, manipular e produzir os estilos da moda.</p>
+        <p>É um ambiente de trabalho voltado para atender clientes que necessitam de <strong><span id="txt-preto">costura em geral</span></strong> - desde ajustes de peças já prontas, roupas sob medida, fantasias, até vestidos de festa.</p>
+    </article>    
+    
+    <section id="pag-servicos">
+       <h2>Serviços</h2>
+       <p>Confira alguns dos serviços prestados pelo ateliê da fran.</p>
+
+    <div id="container">
+      <div class="card">
+           <img src="image/sobmedida.png" alt="imagem ilustrativa do serviço de costura sob medida">
+           <div class="card-content">
+               <span id="nome-servico">Roupa sob medida</span>
+               <span id="preco">R$100,00</span>
+           </div>
+       </div>
+
+       <div class="card">
+            <img src="image/ajuste.png" alt="imagem ilustrativa do serviço de ajuste">
+            <div class="card-content">
+                <span id="nome-servico">Ajuste de roupa</span>
+                <span id="preco">R$35,00</span>
+            </div>
+       </div>
+
+       <div class="card">
+            <img src="image/ziper.png" alt="imagem ilustrativa do serviço de troca de zíper">
+            <div class="card-content">
+                <span id="nome-servico">Troca de zíper</span>
+                <span id="preco">R$30,00</span>
+            </div>
+       </div>
+
+       <div class="card">
+            <img src="image/barra.png" alt="imagem ilustrativa do serviço de barra">
+            <div class="card-content">
+                <span id="nome-servico">Barra de calça</span>
+                <span id="preco">R$25,00</span>
+            </div>
+       </div>
+   </div> 
+    </section>
+    
+    <section id="pag-encomendas">     
+       <h2>Encomendas</h2>
+                      
+        <p>Faça a sua encomenda.</p>
+    
+    <form name="" method="" action="">
+        <label for="nome">Nome:</label>
+        <input id="nome" type="text" name="nome_completo" placeholder="Nome Completo" required />
+        
+        <label for="email">E-mail:</label>
+        <input id="email" type="email" name="email" placeholder="nome@email.com" />
+        
+        <label for="servico">Serviço:</label><br/>
+        <select id="servico" name="servico">
+          <option value="">Selecione</option>
+          <option value="roupasobmedida">Roupa sob medida</option>
+          <option value="ajustederoupa">Ajuste de roupa</option>
+          <option value="trocadeziper">Troca de zíper</option>
+          <option value="barradecalça">Barra de calça</option>
+          <option value="outrosservicos">Outros serviços</option>
+        </select><br/>
+
+         <label for="quantidade">Quantidade:</label><br/>
+         <input id="quantidade" type="number" name="quantidade" min="1" step="1" placeholder="somente números" /><br/>
+
+        <fieldset>
+          <legend>Forma Retirada</legend>
+          <input id="deli" type="radio" name="formaretirada" value="deli" /> <label for="deli">Delivery</label><br/>
+          <input id="reti" type="radio" name="formaretirada" value="reti" /> <label for="reti">Retirar no Local</label>
+        </fieldset>
+
+        <label for="msg">Comentários:</label>
+        <textarea id="msg" cols="52" rows="4">
+        </textarea>
+        
+        <div id="botoes-form">
+           <input type="submit" name="bnt-encomendar" value="ENCOMENDAR" />
+           <input type="reset" name="bnt-cancelar" value="CANCELAR" />
+        </div>
+    </form>
+    </section>
+    
+    <footer>  
+        <p>Desenvolvido por <a href="http://instagram.com/glauciamborges" target="_blank">Glaucia Borges</a> - 2021</p>
+    </footer>
+
+</body>
+</html>
